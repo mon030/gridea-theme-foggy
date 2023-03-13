@@ -1,0 +1,21 @@
+<%if(site.customConfig.commentschoice=='waline'){%>
+<div id="vcomments">
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.js"></script>
+ <script src="https://www.recaptcha.net/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="<%= themeConfig.domain %>/media/css/waline.css%>">
+<div id="waline"></div>
+<script>
+	Waline.init({
+		el: '#waline',
+		lang: 'zh-CN',
+		pageview: true,
+		comment: true,
+		reaction: <%= site.customConfig.Waline_reaction %>,
+		serverURL: '<%= site.customConfig.Waline_serverURL %>',
+		recaptchaV3Key: '<%= site.customConfig.Waline_recaptchaV3Key %>',
+		path: window.location.pathname,
+		dark: 'auto',
+	});
+</script>
+<%}%>

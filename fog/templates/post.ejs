@@ -6,6 +6,10 @@
     <meta name="keywords" content="<%- post.tags.map(tag => tag.name).join(',') %>" />
     <link rel="stylesheet" href="<%= themeConfig.domain %>/media/css/bootstrap.min.css%>">
     <link rel="stylesheet" href="<%= themeConfig.domain %>/styles/main.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
     <!-- 代码渲染风格css -->
     <% if(site.customConfig.codetheme == 'default'){ %>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
@@ -51,7 +55,7 @@
         });
     </script>
     <% } %>
-    <title><%= post.title %></title>
+    <title><%- themeConfig.siteName %> - <%= post.title %></title>
 
     <!-- 大纲索引css调整 -->
     <% if(site.customConfig.menuposition == 'left'){ %>
@@ -127,12 +131,12 @@
                     <!---------------------------- 评论系统👇 ------------------------->
                     <div id="comment" class="comment">
                         <div class="commentcontainer">
-                            <%if(site.customConfig.commentschoice=='valine'){%>
-                                <% if (site.customConfig.Leancloud_appId && site.customConfig.Leancloud_key) { %>
-                                    <%- include('./includes/valine') %>
+                            <%if(site.customConfig.commentschoice=='waline'){%>
+                                <% if (site.customConfig.Waline_serverURL) { %>
+                                    <%- include('./includes/waline') %>
                                     <div class="clear"></div>
                                 <%}else{%>
-                                    <p>请到客户端“主题--自定义配置--配置”中填入leancloud_appID和key</p>
+                                    <p>请到客户端“主题--自定义配置--配置”中填入服务端地址</p>
                                 <%}%>
                             <%}else if(site.customConfig.commentschoice=='twikoo'){%>
                                 <%if(site.customConfig.twikoo_id){%>
@@ -182,12 +186,12 @@
                     <!---------------------------- 评论系统👇 ------------------------->
                     <div id="comment" class="comment">
                         <div class="commentcontainer">
-                            <%if(site.customConfig.commentschoice=='valine'){%>
-                                <% if (site.customConfig.Leancloud_appId && site.customConfig.Leancloud_key) { %>
-                                    <%- include('./includes/valine') %>
+                            <%if(site.customConfig.commentschoice=='waline'){%>
+                                <% if (site.customConfig.site.customConfig.Waline_serverURL) { %>
+                                    <%- include('./includes/waline') %>
                                     <div class="clear"></div>
                                 <%}else{%>
-                                    <p>请到客户端“主题--自定义配置--配置”中填入leancloud_appID和key</p>
+                                    <p>请到客户端“主题--自定义配置--配置”中填入服务端地址</p>
                                 <%}%>
                             <%}else if(site.customConfig.commentschoice=='twikoo'){%>
                                 <%if(site.customConfig.twikoo_id){%>

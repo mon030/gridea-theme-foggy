@@ -221,15 +221,15 @@
       "group": "配置",
       "value": "default",
       "type": "select",
-      "note":"valine需要配置Leancloud，twikoo需要配置cloudbase",
+      "note":"Waline需要配置数据库(LeanCloud)与服务端(Vercel)，twikoo需要配置cloudbase",
       "options": [
         {
           "label": "不使用",
           "value": "default"
         },
         {
-          "label": "valine",
-          "value": "valine"
+          "label": "Waline",
+          "value": "Waline"
         },
         {
           "label": "twikoo",
@@ -238,20 +238,28 @@
       ]
     },
     {
-      "name": "Leancloud_appId",
-      "label": "Leancloud_appId",
+      "name": "Waline_serverURL",
+      "label": "Waline_serverURL",
       "group": "配置",
       "value": "",
       "type": "input",
-      "note": "[valine/阅读量统计] Leancloud_appId"
+      "note": "[Waline/服务端地址] Waline配置文档 https://waline.js.org/"
     },
-    {
-      "name": "Leancloud_key",
-      "label": "Leancloud_key",
+        {
+      "name": "Waline_reaction",
+      "label": "Waline_reaction",
+      "group": "配置",
+      "value": "false",
+      "type": "input",
+      "note": "[Waline/文章表情互动功能] 默认关闭，如需开启请修改为true"
+    },
+            {
+      "name": "Waline_recaptchaV3Key",
+      "label": "Waline_recaptchaV3Key",
       "group": "配置",
       "value": "",
       "type": "input",
-      "note": "[valine/阅读量统计] Leancloud_key"
+      "note": "[Waline/开启reCAPTCHA验证码] 默认关闭，请参考Waline配置文档填写recaptchaV3Key"
     },
     {
       "name": "twikoo_id",

@@ -71,12 +71,12 @@ $(document).ready(function(){
                     <!---------------------------- 评论系统👇 ------------------------->
                     <div id="comment" class="comment">
                         <div class="commentcontainer">
-                           <%if(site.customConfig.commentschoice=='valine'){%>
+                           <%if(site.customConfig.commentschoice=='waline'){%>
                             <% if (site.customConfig.Leancloud_appId && site.customConfig.Leancloud_key) { %>
-                                <%- include('./includes/valine') %>
+                                <%- include('./includes/waline') %>
                                     <div class="clear"></div>
                               <%}else{%>
-                                  <p>请到客户端“主题--自定义配置--配置”中填入leancloud_appID和key</p>
+                                  <p>请到客户端“主题--自定义配置--配置”中填入客户端地址</p>
                                   <%}%>
                               <%}else if(site.customConfig.commentschoice=='twikoo'){%>
                               <%if(site.customConfig.twikoo_id){%>
@@ -113,12 +113,12 @@ $(document).ready(function(){
                     <!---------------------------- 评论系统👇 ------------------------->
                     <div id="comment" class="comment">
                       <div class="commentcontainer">
-                         <%if(site.customConfig.commentschoice=='valine'){%>
+                         <%if(site.customConfig.commentschoice=='waline'){%>
                             <% if (site.customConfig.Leancloud_appId && site.customConfig.Leancloud_key) { %>
-                                <%- include('./includes/valine') %>
+                                <%- include('./includes/waline') %>
                                   <div class="clear"></div>
                             <%}else{%>
-                                <p>请到客户端“主题--自定义配置--配置”中填入leancloud_appID和key</p>
+                                <p>请到客户端“主题--自定义配置--配置”中填入客户端地址</p>
                                 <%}%>
                             <%}else if(site.customConfig.commentschoice=='twikoo'){%>
                             <%if(site.customConfig.twikoo_id){%>
