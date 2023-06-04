@@ -3,7 +3,7 @@
 ## Gridea主题Fog的修改版 Foggy 😶‍🌫️ 
 
 ### 很惭愧，就做了一点微小的工作
-### Sponsored by [Cloudflare](https://cloudflare.com)
+### 感谢 [Cloudflare](https://cloudflare.com)
 
 <img src="https://ericamblog.oss-cn-shanghai.aliyuncs.com/2020/20201213.png">
 <img src="https://ericamblog.oss-cn-shanghai.aliyuncs.com/2020/QQ%E5%9B%BE%E7%89%8720201213004926.png" 
@@ -12,7 +12,10 @@
 
 ![](https://pic4.58cdn.com.cn/nowater/webim/big/n_v2c929d8358d31446f84160a81d5851b6f.png)
 
+
 **最新版本：version_1.5_foggy**
+     
+[演示网站](https://imon.eu.org)
 
 主题介绍：[Gridea主题Fog的修改版](<https://github.com/mon030/gridea-theme-foggy/> )
 
