@@ -1,6 +1,6 @@
 # **💖Gridea-theme-foggy**
 
-## **Gridea主题Fog的修改版 Foggy 😶‍🌫️  **
+## Gridea主题Fog的修改版 Foggy 😶‍🌫️ 
 
 ### 很惭愧，就做了一点微小的工作
 ### Sponsored by [Cloudflare](https://cloudflare.com)
