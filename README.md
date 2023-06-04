@@ -3,6 +3,7 @@
 ## **Gridea主题Fog的修改版 Foggy 😶‍🌫️  **
 
 ### 很惭愧，就做了一点微小的工作
+### Sponsored by [Cloudflare](https://cloudflare.com)
 
 <img src="https://ericamblog.oss-cn-shanghai.aliyuncs.com/2020/20201213.png">
 <img src="https://ericamblog.oss-cn-shanghai.aliyuncs.com/2020/QQ%E5%9B%BE%E7%89%8720201213004926.png" 
